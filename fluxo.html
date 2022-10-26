@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<style>
+  h1{
+    background-color: blue;
+  }
+
+  #super-title{
+    background-color: red;
+  }
+
+  h1{
+    background-color: green;
+  }
+  .my-title-2{
+    background-color: yellow;
+  }
+  strong{
+    color: blueviolet;
+  }
+  .my-text strong{
+    color: aqua;
+  }
+
+</style>
+
+<body>
+  <h1 id="super-title">Testando Especificidade</h1>
+  <p class="my-text">
+    Lorem ipsum dolor sit amet <strong>consectetur adipisicing elit.</strong><br>
+    Praesentium quo at dicta nulla consequuntur autem quam aliquid, voluptates,
+    <br>
+    deleniti, impedit dolorum cupiditate possimus atque iure eaque itaque voluptas.
+    <br>
+    Temporibus, similique!
+  </p>
+  <h1 class="my-title-2">Testando Especificidade</h1>
+  <p class="my-text-2">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+    Praesentium quo at dicta <strong>nulla consequuntur autem quam aliquid, voluptates,</strong> 
+    <br>
+    deleniti, impedit dolorum cupiditate possimus atque iure eaque itaque voluptas.
+    <br>
+    Temporibus, similique!
+  </p>
+</body>
+
+</html>
